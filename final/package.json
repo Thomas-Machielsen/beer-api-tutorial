@@ -1,0 +1,33 @@
+{
+  "name": "Beer-api",
+  "version": "0.0.1",
+  "description": "Beer-api",
+  "main": "app.js",
+  "author": "",
+  "scripts": {
+    "test-coverage": "jest --coverage",
+    "test": "jest",
+    "lint": "eslint . || exit 0",
+    "build": "node --harmony app.js",
+    "env": "env",
+    "prebuild": "npm run lint",
+    "precommit": "eslint *//*.js",
+    "watch:js": "onchange '**/**/*.js' -i -- npm run build",
+    "watch": "npm run watch:js",
+    "start": "node --harmony app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.10.7",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.10.1",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.33.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.19.1",
+    "onchange": "^3.2.1"
+  }
+}
