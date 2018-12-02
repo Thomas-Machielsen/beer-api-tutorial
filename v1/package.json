@@ -1,0 +1,22 @@
+{
+  "name": "Beer-api",
+  "version": "0.0.1",
+  "description": "Beer-api",
+  "main": "app.js",
+  "author": "",
+  "scripts": {
+    "build": "node --harmony app.js",
+    "env": "env",
+    "watch:js": "onchange '**/**/*.js' -i -- npm run build",
+    "watch": "npm run watch:js",
+    "start": "node --harmony app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.10.7"
+  },
+  "devDependencies": {
+    "onchange": "^3.2.1"
+  }
+}
